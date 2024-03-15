@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>write example</title>
+  <style>
+    div {
+      padding: 30px;
+    }
+    a{
+      margin: 20px;
+      padding: 10px;
+      background-color: aqua;
+      border-radius: 10px;
+    }
+    div{
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a>Link1</a>
+    <a>Link2</a>
+    <a>Link3</a>
+  </div>
+  <div id="out">
+    <div id="middle-out">
+      <div id="middle-in">
+        <div id="inn" >
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('out').addEventListener('mouseleave', function (e) {
+      console.log('l',e);
+    });
+    document.getElementById('out').addEventListener('mouseout', function (e) {
+      console.log('o',e);
+    });
+    
+  </script>
+</body>
+
+</html>
