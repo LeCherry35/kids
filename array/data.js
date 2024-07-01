@@ -36,6 +36,18 @@ let func = () => {
 // ставимо функцію на зміну значення input
 input.onchange = func
 
+let textInput = document.querySelector('#textInput')
+let button = document.querySelector('button')
+let func2 = () => {
+    let text = textInput.value
+    let num = input.value
+    let selectedDiv = divClass[num]
+    console.log(selectedDiv);
+    selectedDiv.innerHTML = text
+}
+
+button.onclick = func2
+
 
 
 
